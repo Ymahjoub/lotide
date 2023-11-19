@@ -26,8 +26,14 @@ const eqArrays = (arr1, arr2) => {
 };
 
 const without = (source, itemsToRemove) => {
+  const result = [];
 
-  const result = source.filter(item => !itemsToRemove.includes(item));
+  for (const item of source) {
+    if (!itemsToRemove.includes(item)) {
+      result.push(item);
+    }
+  }
+
   return result;
 
 };
