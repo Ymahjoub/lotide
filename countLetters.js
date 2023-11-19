@@ -13,6 +13,7 @@ const countLetters = function(sentence) {
     if (letter !== ' ') {
 
       if(letterCount[letter]) {
+        
         letterCount[letter]++;
 
       } else {
@@ -27,4 +28,5 @@ return letterCount;
 }; 
 
 const result = countLetters('LHL');
-console.log(result);
+assertEqual(result ['L'], 2);
+assertEqual(result['H'], 1);
