@@ -2,8 +2,8 @@ const assertArraysEqual = function (actual, expected) {
   const isEqual = eQArrays(actual, expected);
   console.log(
     isEqual
-      ? 'Assertion Passed: ${actual} === ${expected}'
-      : 'Assertion Failed: ${actual} !== ${e[exted]}'
+      ? `Assertion Passed: ${actual} === ${expected}`
+      : `Assertion Failed: ${actual} !== ${expected}`
   );
 };
 
@@ -34,5 +34,14 @@ const letterPositions = function (sentence) {
   }
   return results;
 }
-assertArraysEqual(letterPositions("hello").e, [1]); 
-assertArraysEqual(letterPositions("hello").l, [2,3]);
+
+const testLetterPosition = function () {
+  const result= letterPositions("hello");
+assertArraysEqual(result.h, [0]);
+assertArraysEqual(result.e, ("hello") [1]); 
+assertArraysEqual(result.l, ("hello") [2,3]);
+assertArraysEqual(result.o, [4]);
+
+};
+
+testLetterPosition();
