@@ -37,10 +37,10 @@ const letterPositions = function (sentence) {
 
 const testLetterPosition = function () {
   const result= letterPositions("hello");
-assertArraysEqual(result.h, [0]);
+assertArraysEqual(result.h, ("hello")[0]);
 assertArraysEqual(result.e, ("hello") [1]); 
 assertArraysEqual(result.l, ("hello") [2,3]);
-assertArraysEqual(result.o, [4]);
+assertArraysEqual(result.o, ("hello")[4]);
 
 };
 
