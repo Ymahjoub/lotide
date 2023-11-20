@@ -18,7 +18,7 @@ const assertArraysEqual = function(actual, expected) {
   if(eqArrays(actual, expected)) {
     console.log("Arrays are equal!");
   } else {
-    console.log("Arrays are not qual!")
+    console.log("Arrays are not equal!")
   }
 }; 
 
