@@ -1,7 +1,11 @@
-const assertEqual = require('../assertEqual')
-const tail = require("../tail")
+const assert = require('chai').assert
+const tail = require("../tail") 
 
-console.log(tail([5, 6, 7]));
-const nums = [5, 6, 7];
-tail(nums);
-assertEqual(nums.length, 3);
+describe("#tail", () => {
+  it("tail doesn't change the array [5, 6, 7]", () => {
+    const nums = [5, 6, 7];
+    tail(nums);
+    assert.strictEqual(nums.length, 3);
+  });
+});
+
